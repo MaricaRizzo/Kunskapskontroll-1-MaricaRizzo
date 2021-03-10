@@ -1,25 +1,21 @@
-import React from 'react';
-
-const NumberTickets = () => {
-
-    const amountDropDwn = document.getElementById('numberTickets');
-
-    for (let i = 1; i < 11; i++) {
-        let opt = document.createElement('option');
-        opt.id = i;
-        let text = document.createTextNode(i);
-        opt.appendChild(text);
-        amountDropDwn.appendChild(opt);
-    }
-
-    let selectedAmount = amountDropDwn.options[amountDropDwn.selectedIndex].id;
-
+const NumberTickets = (props) => {
+        
     return (
-        <select id='numberTickets'></select>
+        
+        <select id='numberTickets' onChange={props.updateTickets}>
+            <option value='1'>1</option>
+            <option value='2'>2</option>
+            <option value='3'>3</option>
+            <option value='4'>4</option>
+            <option value='5'>5</option>
+            <option value='6'>6</option>
+            <option value='7'>7</option>
+            <option value='8'>8</option>
+            <option value='9'>9</option>
+            <option value='10'>10</option>
+        </select>
     )
-}
+    
+};
 
 export default NumberTickets;
-
-
-

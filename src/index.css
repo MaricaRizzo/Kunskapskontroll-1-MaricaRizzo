@@ -1,8 +1,6 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'PT Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -10,4 +8,115 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+h1, h2 {
+  font-family: helvetica;
+  text-transform: uppercase;
+}
+
+header {
+  text-align: center;
+}
+
+h1{
+  background-color: #CECECE;
+  margin: 0;
+  padding: 2rem;
+}
+
+#cities {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+}
+
+
+.city {
+  min-width: 50%;
+}
+
+.time{
+  color: rgba(0, 0, 0, 0.4);
+}
+
+#departure {
+  background-color: #E2E2E2;
+}
+
+#arrival {
+  background-color: #ECECEC;
+}
+
+
+
+
+
+
+main {
+  margin: 1rem;
+}
+
+#classForm {
+  min-width: 100%;
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+}
+
+.classInput {
+  min-width: 50%;
+}
+
+
+
+#ticket-title {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+}
+
+
+.ticketTitle {
+  display: flex;
+  flex-direction: column;
+  min-width: 50%;
+  
+}
+
+.ticketTitle select {
+  font-size: larger;
+  padding: 0.5rem;
+}
+
+
+
+
+
+
+#nameForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  margin: 0.5rem 0;
+  padding: 1rem;
+  font-size: larger;
+}
+
+#termsForm {
+  margin-top: 1rem;
+}
+
+
+#book {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  font-size: x-large;
+  min-width: 100%;
+  margin-top: 2rem;
+  padding: 1rem 0;
 }
